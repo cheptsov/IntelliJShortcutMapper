@@ -1,0 +1,32 @@
+<idea-plugin version="2">
+    <id>IntelliJShortcutMapper</id>
+    <name>IntelliJShortcutMapper</name>
+    <version>1.0</version>
+    <vendor email="andrey.cheptsov@gmail.com" url="http://twitter.com/andrey_cheptsov">Abdrey Cheptsov</vendor>
+
+    <description><![CDATA[
+    ]]></description>
+
+    <change-notes><![CDATA[
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="131"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <application-components>
+    </application-components>
+
+    <project-components>
+    </project-components>
+
+    <actions>
+        <action id="ExportShortcuts" class="ShortcutExporterAction" text="Export shortcuts for ShortcutMapper" description="Export shortcuts for ShortcutMapper"
+                icon="AllIcons.Json.Object">
+            <add-to-group group-id="ToolsMenu" relative-to-action="GenerateJavadoc" anchor="after"/>
+        </action>
+    </actions>
+
+</idea-plugin>
