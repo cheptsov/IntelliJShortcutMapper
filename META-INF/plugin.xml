@@ -2,7 +2,7 @@
     <id>IntelliJShortcutMapper</id>
     <name>IntelliJShortcutMapper</name>
     <version>1.0</version>
-    <vendor email="andrey.cheptsov@gmail.com" url="http://twitter.com/andrey_cheptsov">Abdrey Cheptsov</vendor>
+    <vendor email="andrey.cheptsov@gmail.com" url="http://twitter.com/andrey_cheptsov">Andrey Cheptsov</vendor>
 
     <description><![CDATA[
     ]]></description>
@@ -16,6 +16,8 @@
     <extensions defaultExtensionNs="com.intellij">
     </extensions>
 
+    <depends>com.intellij.modules.platform</depends>
+
     <application-components>
     </application-components>
 
@@ -23,9 +25,9 @@
     </project-components>
 
     <actions>
-        <action id="ExportShortcuts" class="ShortcutExporterAction" text="Export shortcuts for ShortcutMapper" description="Export shortcuts for ShortcutMapper"
+        <action id="ShortcutMapper.ShortcutExporterAction" class="ShortcutExporterAction" text="Export shortcuts for ShortcutMapper" description="Export shortcuts for ShortcutMapper"
                 icon="AllIcons.Json.Object">
-            <add-to-group group-id="ToolsMenu" relative-to-action="GenerateJavadoc" anchor="after"/>
+            <add-to-group group-id="ToolsMenu" anchor="last" />
         </action>
     </actions>
 
