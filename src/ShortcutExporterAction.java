@@ -58,7 +58,8 @@ public class ShortcutExporterAction extends AnAction {
                     return !s.contains("button");
                 }
             }), ",");
-            if (action != null) {
+            if (action != null && action.getTemplatePresentation() != null &&
+                    action.getTemplatePresentation().getText() != null) {
                 final String winShortcutFormatted = formatShortcut(winShortcuts);
                 final String macShortcutFormatted = formatShortcut(macShortcuts);
                 final String actionName = action.getTemplatePresentation().getText().
